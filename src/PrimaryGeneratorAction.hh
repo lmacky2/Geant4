@@ -4,7 +4,7 @@
 #include "G4VUserPrimaryGeneratorAction.hh"
 
 #include "G4ParticleGun.hh"
-#include "G4SystemofUnits.hh"
+#include "G4SystemOfUnits.hh"
 #include "G4ParticleTable.hh"
 #include "G4ParticleDefinition.hh"
 #include "G4MuonMinus.hh"
