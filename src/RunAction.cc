@@ -18,7 +18,7 @@ void RunAction::BeginOfRunAction(const G4Run*)
 {
     G4cout << "### Run started ###" << G4endl;
 
-    energyLog.open("../../output/EnergyLog.txt", std::ios::out | std::ios::app);
+    energyLog.open("../output/EnergyLog.txt", std::ios::out | std::ios::app);
     if (!energyLog){
         G4Exception("RunAction::BeginOfRunAction", "FileError", FatalException,
                     "Could not open energy_log.txt for writing.");

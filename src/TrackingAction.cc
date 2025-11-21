@@ -42,7 +42,7 @@ void TrackingAction::PreUserTrackingAction(const G4Track* track)
 
 void TrackingAction::WriteSummaryToFile() const
 {
-    std::ofstream outFile("../../output/ParticleTally.txt"); // Open the output file for writing
+    std::ofstream outFile("../output/ParticleTally.txt"); // Open the output file for writing
     if (outFile.is_open()) {
         outFile << "Particle\tCount\n"; // Header for the output file
         for (const auto& entry : particleCountMap) {
@@ -58,7 +58,7 @@ void TrackingAction::WriteSummaryToFile() const
 
 void TrackingAction::WriteTCNTallyToFile() const
 {
-    std::ofstream out("../../output/TCNtally.txt");
+    std::ofstream out("../output/TCNtally.txt");
     if (out.is_open()) {
         out << "Nuclide\tCount\n";
         for (const auto& entry : tcnTallyMap) {

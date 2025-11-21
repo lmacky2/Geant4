@@ -13,7 +13,7 @@ SteppingAction::SteppingAction(MyDetectorConstruction* detConstruction)
     fScoringVolume = detConstruction->GetScoringVolume();
 
     // Open the output file
-    outputFile.open("../../output/Output.txt", std::ios::out);
+    outputFile.open("../output/Output.txt", std::ios::out);
     if (outputFile.is_open()) {
         outputFile << "TrackID\tParentID\tStepNum\tX(mm)\tY(mm)\tZ(mm)\tKineticEnergy(MeV)\tParticle\tProcess\n";
         outputFile << "-------------------------------------------------------------\n";
@@ -69,7 +69,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     }
 
     if (hasIon || track->GetDefinition()->GetParticleType() == "nucleus") {
-        std::ofstream reactionOut("../../output/ReactionLog.txt", std::ios::app);
+        std::ofstream reactionOut("../output/ReactionLog.txt", std::ios::app);
         reactionOut << "=== Reaction ===\n";
         reactionOut << "Process: " << procName << "\n";
         reactionOut << "Primary: " << track->GetDefinition()->GetParticleName()
