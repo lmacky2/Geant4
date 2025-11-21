@@ -1,0 +1,30 @@
+# Build directories
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# Visual Studio stuff
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.tlog
+
+# Binaries
+*.exe
+*.obj
+*.dll
+*.lib
+*.pdb
+
+# Qt / CMake auto-generated
+.qt/
+cmake_install.cmake
+InstallScripts.json
+
+# Logs / temp
+*.log
+*.tmp
+
+# Outputs that can be regenerated
+output/
