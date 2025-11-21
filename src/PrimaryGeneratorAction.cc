@@ -22,7 +22,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
     fParticleGun = new G4ParticleGun(1); // Create a particle gun with 1 particle per event
     fParticleGun->SetParticleDefinition(G4MuonMinus::MuonMinus()); // Set the particle definition
     
-    LoadSpectrum("../../data/spectrum_1000kmwe_flat.dat");
+    LoadSpectrum("../data/spectrum_1000kmwe_flat.dat");
 
 }
 
